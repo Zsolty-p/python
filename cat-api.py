@@ -1,9 +1,8 @@
 import requests
 
-url="https://api.catapi.com/v1/breeds"
 head={'x-api-key' : 'DEMO-API-KEY'}
 try:
-	reply = requests.get(url, headers=head)
+	reply = requests.get("https://api.thecatapi.com/v1/breeds", headers=head)
 except:
 	print("Valami nem jo.")
 	exit()
